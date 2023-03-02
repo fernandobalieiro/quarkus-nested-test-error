@@ -1,0 +1,16 @@
+"%dev":
+  quarkus:
+    http:
+      port: 8081
+    datasource:
+      db-kind: postgresql
+      jdbc:
+        url: jdbc:postgresql://localhost:5432/test
+      username: test
+      password: test
+    hibernate-orm:
+      log:
+        sql: true
+        format-sql: false
+    package:
+      appcds-use-container: false

@@ -1,0 +1,11 @@
+"%test":
+  quarkus:
+    datasource:
+      db-kind: postgresql
+      username: test
+      password: test
+    hibernate-orm:
+      log:
+        sql: true
+    http:
+      test-port: 0
