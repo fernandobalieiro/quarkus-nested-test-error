@@ -16,6 +16,15 @@ public class Fruit {
     @Column(name = "name", nullable = false, length = 50)
     private String name;
 
+    public Fruit() {
+        // Default Constructor
+    }
+
+    public Fruit(final Integer id, final String name) {
+        this.id = id;
+        this.name = name;
+    }
+
     public Integer getId() {
         return id;
     }
